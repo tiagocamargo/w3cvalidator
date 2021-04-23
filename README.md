@@ -9,7 +9,7 @@ on:
   deployment_status
 
 jobs:
-  security-headers-check:
+  conformance:
     name: Check document-conformance
     runs-on: ubuntu-latest
     steps:

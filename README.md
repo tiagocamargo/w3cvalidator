@@ -18,7 +18,7 @@ jobs:
           repository: marcuslindblom/w3cvalidator
       - uses: marcuslindblom/w3cvalidator@main
         with:
-          url: ${{ secrets.SECURITY_HEADERS_URL }}
+          url: ${{ secrets.URL }}
           level: error
 ```
 

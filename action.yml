@@ -1,0 +1,22 @@
+# action.yml
+name: 'The Nu Html Checker'
+description: 'Quickly and easily check document-conformance to catch unintended mistakes'
+branding:
+  icon: 'check-circle'
+  color: 'gray-dark'
+inputs:
+  url:
+    description: 'URL to check'
+    required: true
+  level:
+    description: 'The desired level'
+    required: false
+outputs:
+  count:
+    description: 'The total counts of conformance issues'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.url }}
+    - ${{ inputs.level }}

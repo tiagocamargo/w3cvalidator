@@ -1,3 +1,5 @@
+#!/bin/bash
+
 URL=$1
 LEVEL=${2:-"error"}
 HOST=${3:-"https://validator.w3.org/nu/"}
